@@ -16,7 +16,11 @@
 
 ## 개발 환경 정리
 - 로컬: 파이썬, HTML, JS, CSS 개발 등
+  - 파이썬 설치
+  - VSCODE 설치
+  - GITHUB 계정 생성 및 사용법
 - DB: MySQL 등의 RDB, DB 서버 제공 간편 도구 활용
 - 서버: AWS 또는 AWS 라이트세일 또는 구름IDE
 
 ## 커리큘럼
+- 
