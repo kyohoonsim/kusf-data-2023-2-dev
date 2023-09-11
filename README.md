@@ -19,7 +19,7 @@
   - 파이썬 설치
   - VSCODE 설치
   - GITHUB 계정 생성 및 사용법
-- DB: MySQL 등의 RDB, DB 서버 제공 간편 도구 활용
+- DB: MySQL 등의 RDB, DB 서버 제공 간편 도구 활용 (PlanetScale)
 - 서버: AWS 또는 AWS 라이트세일 또는 구름IDE
 
 ## 커리큘럼
