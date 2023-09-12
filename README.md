@@ -45,4 +45,6 @@
 
 ## 커리큘럼
 
+- 11월 8일 강의 추가 가능
+
 <img width="1041" alt="image" src="https://github.com/kyohoonsim/kusf-data-2023-2-dev/assets/58966525/1368fd01-ba0a-472a-8dd4-d2cbf406f399">
