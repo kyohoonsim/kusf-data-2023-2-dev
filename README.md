@@ -27,7 +27,7 @@
 
 ## 브랜치 전략
 
-- sim, do branch에서 각각 작업 한 후 master/main 브랜치로 PR 올릴 것.
+- lecture/sim, lecture/do branch에서 각각 작업 한 후 master/main 브랜치로 PR 올릴 것.
   - 최소 한번이라도 다른 강사의 강의자료를 확인하게 하기 위한 장치.
 
 ---
