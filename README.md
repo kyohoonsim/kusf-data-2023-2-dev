@@ -38,14 +38,15 @@
 - 로컬: 파이썬, HTML, JS, CSS 개발 등
   - 파이썬 설치
   - VSCODE 설치
-  - GITHUB 계정 생성 및 사용법
-- DB: MySQL 서버 제공 간편 도구 활용 (PlanetScale)
+  - DBeaver 설치
+- DB: 서버리스 MySQL (PlanetScale)
 - 서버: AWS 또는 AWS 라이트세일 또는 구름IDE
 
 ---
 
 ## 커리큘럼
 
-- 11월 8일 강의 추가 가능
+- 일정 관련 특이사항
+  - 11월 8일 강의 추가될 수도 있음
 
 <img width="1041" alt="image" src="https://github.com/kyohoonsim/kusf-data-2023-2-dev/assets/58966525/1368fd01-ba0a-472a-8dd4-d2cbf406f399">
