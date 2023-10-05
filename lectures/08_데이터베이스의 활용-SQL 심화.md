@@ -15,6 +15,54 @@ SELECT p.name AS nm FROM player AS p;
 ```
 > AS는 생략이 가능하나, 처음에는 붙이는 걸 권장
 
+## 자주 사용하는 함수
+```sql
+/* 대문자를 소문자로 변환 */
+SELECT LOWER('HELLO') FROM DUAL;
+
+/* 소문자를 대문자로 변환 */
+SELECT UPPER('hello') FROM DUAL;
+
+/* 두개의 문자열을 연결 */
+SELECT CONCAT('hello', 'world') FROM DUAL;
+
+/* 1번째 자리에서 5번째 자리까지 문자열 */
+SELECT SUBSTR('helloworld', 1, 5) FROM DUAL;
+
+/* 6번째부터 모든 문자열*/
+SELECT SUBSTR('helloworld', 6) FROM DUAL;
+
+/* 문자열의 길이 */
+SELECT LENGTH('hello') FROM DUAL;
+
+/* 문자열 10자리까지 부족한 문자는 왼쪽에 *로 채우기 */
+SELECT LPAD('hello', 10, '*') FROM DUAL;
+
+/* 문자열 10자리까지 부족한 문자는 오른쪽에 *로 채우기 */
+SELECT RPAD('hello', 10, '*') FROM DUAL;
+
+/* 양쪽 공백 제거 */
+SELECT TRIM('  hello  ') FROM DUAL;
+
+/* o문자를 찾아서 *로 변경 */
+SELECT REPLACE('helloworld', 'o', '*') FROM DUAL;
+
+/* null이면 hello로 출력 */
+SELECT IFNULL(null, 'hello') FROM DUAL;
+
+/* 절대값 */
+SELECT ABS(-5) FROM DUAL;
+
+/* 첫번째(1)자리까지 반올림*/
+SELECT ROUND(5.55, 1) FROM DUAL;
+
+/* 케이스별로 원하는 값을 value컬럼으로 가져오기 */
+SELECT 
+	CASE WHEN 1!=1 THEN 'A'
+	WHEN 2=2 THEN 'B'
+	END AS 'value'
+FROM DUAL;
+```
 
 ## 테이블
   
