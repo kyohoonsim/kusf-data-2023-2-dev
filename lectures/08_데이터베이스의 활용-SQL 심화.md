@@ -16,6 +16,8 @@ SELECT p.name AS nm FROM player AS p;
 > AS는 생략이 가능하나, 처음에는 붙이는 걸 권장
 
 ## 자주 사용하는 함수
+- MySQL 함수 종류
+  - https://www.w3schools.com/mysql/mysql_ref_functions.asp
 ```sql
 /* 대문자를 소문자로 변환 */
 SELECT LOWER('HELLO') FROM DUAL;
@@ -62,7 +64,12 @@ SELECT
 	WHEN 2=2 THEN 'B'
 	END AS 'value'
 FROM DUAL;
+
+/* 현재 날짜와 시간(NOW())을 원하는 포맷으로 출력*/
+SELECT DATE_FORMAT(NOW(), '%Y-%m-%d %h:%i:%s') FROM DUAL;
 ```
+> 날짜/시간 포맷 : https://www.w3schools.com/mysql/func_mysql_date_format.asp
+
 
 ## 테이블
   
