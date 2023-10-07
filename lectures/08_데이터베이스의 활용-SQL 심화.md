@@ -62,6 +62,7 @@ SELECT ROUND(5.55, 1) FROM DUAL;
 SELECT 
 	CASE WHEN 1!=1 THEN 'A'
 	WHEN 2=2 THEN 'B'
+  ELSE 'C'
 	END AS 'value'
 FROM DUAL;
 
@@ -70,6 +71,24 @@ SELECT DATE_FORMAT(NOW(), '%Y-%m-%d %h:%i:%s') FROM DUAL;
 ```
 > 날짜/시간 포맷 : https://www.w3schools.com/mysql/func_mysql_date_format.asp
 
+### *Quiz8. 함수*
+
+```sql
+SELECT
+	x.*
+FROM
+(
+	SELECT '도준혁' AS name, 72.8 AS average FROM DUAL
+	UNION ALL
+	SELECT '심교훈' AS name, 82.3 AS average FROM DUAL
+	UNION ALL
+	SELECT '박수호' AS name, 97.5 AS average FROM DUAL
+) AS x
+```
+
+> 8-1. x.* 아래로 x테이블의 average가 90이상은 A등급, average가 80이상 90미만은 B등급, 80미만은 C등급인 grade 컬럼으로 보여주고, 각 average를 절대값으로 표현
+
+![08_05.png](./images/08_05.png)
 
 ## 테이블
   
