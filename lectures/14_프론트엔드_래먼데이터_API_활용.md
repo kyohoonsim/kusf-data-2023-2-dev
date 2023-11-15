@@ -1,8 +1,9 @@
 # 프론트엔드의 래먼데이터 API 활용
 
 ## backend 서버 start
+- ### lahmansbaseballdb.sqlite가 있는 폴더 열기 (VsCode-File-Open Folder)
 
-- ### crud.py
+- ### mlb_crud.py 생성
     ```python
     from sqlalchemy import create_engine, text
 
@@ -59,12 +60,12 @@
         return data
     ```
 
-- ### main.py
+- ### mlb_api.py 생성
     ```python
     from fastapi import FastAPI, Body
     from fastapi.middleware.cors import CORSMiddleware # 14_프론트엔드_래먼데이터_API_활용 추가
 
-    import crud
+    import mlb_crud
 
 
     app = FastAPI(title="레먼데이터베이스 API")
@@ -101,12 +102,12 @@
   - #### 윈도우
     ```bash
     call .venv/Scripts/activate
-    uvicorn main:app --host 0.0.0.0 --port 8999 --reload
+    uvicorn mlb_api:app --host 0.0.0.0 --port 8999 --reload
     ```
   - #### MacOS 
     ```bash
     source .venv/bin/activate
-    uvicorn main:app --host 0.0.0.0 --port 8999 --reload
+    uvicorn mlb_api:app --host 0.0.0.0 --port 8999 --reload
     ```
 ---
 
@@ -142,7 +143,11 @@ GET : https://kusf-api.run.goorm.site/pitching/seasons?playerID=ryuhy01&start_ye
             //data  : {key : value},                    // 요청 시 포함되어질 데이터
             success : function(data, status, xhr) {     // 정상적으로 응답 받았을 경우에는 success 콜백이 호출되게 됩니다.
                 console.log(data);
-                $("#playerInfo").html(data);
+                $("#playerInfo").text(JSON.stringify(data));
+                /*
+                JSON.stringify : javascript 객체를 JSON 문자열로 변환
+                JSON.parse : JSON 문자열을 javascript 객체로 변환
+                */
             },
             error	: function(xhr, status, error) {    // 서버에서 error가 생겼을 때 호출됩니다.
                 console.log(xhr);                      
